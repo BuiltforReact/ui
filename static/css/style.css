@@ -824,12 +824,26 @@ ul.ais-Hits-list {
   -moz-appearance: none;
   appearance: none;
   padding: 0.3rem 1.7rem;
-  width: 75%;
+  width: 100%;
   position: relative;
   background-color: #fff;
   border: 1px solid #c4c8d8;
   border-radius: 5px;
   font-size: 1.5em;
+}
+
+span.ais-PoweredBy-text {
+  font-size: 0.8rem;
+}
+
+.ais-PoweredBy.justify-content-right {
+  float: right;
+  text-align: right;
+}
+
+a.ais-PoweredBy-link {
+  margin-top: 0;
+  display: flex;
 }
 
 .ais-SearchBox-input::-webkit-input-placeholder {
@@ -874,4 +888,29 @@ ul.ais-Hits-list {
 
 .ais-SearchBox-submitIcon {
   display: none;
+}
+
+.ais-Pagination-list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  justify-content: center!important;
+  -webkit-box-pack: center!important;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.ais-Pagination-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 100% !important;
+}
+
+.ais-Pagination-link.ais-Pagination-link--selected {
+  background-color: #63DBFA;
+  border-radius: 100%;
+  color: #ffffff;
 }

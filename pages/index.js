@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
-import {InstantSearch, Hits, SearchBox} from 'react-instantsearch/dom';
+import {InstantSearch, Hits, SearchBox, Pagination, PoweredBy} from 'react-instantsearch/dom';
 import Result from '../components/Result'
 function Index() {
   return (<Layout>
@@ -13,11 +13,20 @@ function Index() {
                 Search for a React Package</h1>
               {/* <input type="text" className="form-control"/> */}
               <SearchBox></SearchBox>
+              <div style={{
+                  marginTop: '10px',
+                  float: 'right'
+                }}>
+                <PoweredBy className="justify-content-right"></PoweredBy>
+              </div>
             </div>
           </div>
         </section>
         <div className="container result-container">
           <Hits hitComponent={Result}></Hits>
+        </div>
+        <div className="container mt-5">
+          <Pagination showFirst={true} showLast={true} showPrevious={true} showNext={true} padding={2}></Pagination>
         </div>
       </main>
     </InstantSearch>
