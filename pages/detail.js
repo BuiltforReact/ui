@@ -606,7 +606,7 @@ class Detail extends React.Component {
               </ul>
               <div className="tab-content repo-detail-info">
                 <div className="tab-pane fade show active readme" id="readme" role="tabpanel" aria-labelledby="home-tab">
-                  <Markdown className="result" source={this.state.readme}/>
+                  <Markdown className="result" source={this.state.readme} escapeHtml={false}/>
                 </div>
                 <div className="tab-pane fade" id="files" role="tabpanel" aria-labelledby="profile-tab">...</div>
               </div>
