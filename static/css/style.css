@@ -863,30 +863,6 @@ a.ais-PoweredBy-link {
 }
 
 .ais-SearchBox-submit {
-  padding: 0;
-  overflow: visible;
-  font: inherit;
-  line-height: normal;
-  color: inherit;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.ais-SearchBox-submit::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-.ais-SearchBox-submit[disabled] {
-  cursor: default;
-}
-
-.ais-SearchBox-submitIcon {
   display: none;
 }
 
@@ -928,4 +904,8 @@ a.ais-PoweredBy-link {
 .table-bordered th {
   background-color: #343a40;
   color: #ffffff;
+}
+
+.ais-SearchBox-reset {
+  display: none !important;
 }
